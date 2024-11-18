@@ -12,14 +12,12 @@ The machine should be able to run simple LC3 programs.
 
 Compile the sample program:
 
-`gcc -Wall -std=c11 simple_program.c`
+`gcc -Wall -std=c11 -o simple_program.obj simple_program.c`
 
 Compile the `vm`:
 
-`gcc -Wall -std=c11 vm.c vm_dbg.c`
+`gcc -Wall -std=c11 -o vm vm.c vm_dbg.c`
 
 Run the program:
 
-`./a.out simple_program.obj`
-
-
+`./vm simple_program.obj`
